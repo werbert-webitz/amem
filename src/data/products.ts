@@ -361,7 +361,7 @@ export const PRODUCTS: Product[] = [
   isPopular: true,
   isNew: false,
   customizationOptions: []
-
+},
   {
     id: 'leao-em-croche',
     name: 'Leão Amigurumi em Crochê',
