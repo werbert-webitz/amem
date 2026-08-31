@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo } from './logo';
+import { Logo } from './Logo';
 import { BRAND_CONFIG } from '../data/products';
 import { Instagram, MessageCircle, ArrowUp } from 'lucide-react';
 
