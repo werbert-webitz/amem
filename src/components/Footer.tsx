@@ -1,10 +1,10 @@
 import React from 'react';
-import { Logo } from './Logo';
+import { Logo } from './logo';
 import { BRAND_CONFIG } from '../data/products';
 import { Instagram, MessageCircle, ArrowUp } from 'lucide-react';
 
 // Import da imagem garante que o bundler (Vite/Webpack) inclua o arquivo no build final
-import logoWebitz from '../assets/images/Logo.png';
+import logoWebitz from '../assets/images/logo.png';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
