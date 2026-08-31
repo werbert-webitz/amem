@@ -11,6 +11,7 @@ import { ProductModal } from './components/ProductModal';
 import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
 import { Product } from './types';
 
+
 export default function App() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
