@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🕊️ Amém - Artigos Religiosos Artesanais
 
-# Run and deploy your AI Studio app
+Website de apresentação e catálogo virtual de produtos artesanais religiosos. Desenvolvido para destacar a delicadeza de cada santinho, terço e item exclusivo confeccionado à mão, facilitando a navegação e a encomenda direta com os clientes através do WhatsApp.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/d0bc4706-4e9e-47d7-9215-7be833a30b19
+## 🚀 Tecnologias Utilizadas
 
-## Run Locally
+* **React** + **TypeScript**
+* **Vite** (Build tool e desenvolvimento rápido)
+* **Tailwind CSS** (Estilização responsiva e utilitária)
+* **Lucide React** (Pacote de ícones modernos)
 
-**Prerequisites:**  Node.js
+---
 
+## 🛠️ Como Executar o Projeto Localmente
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Pré-requisitos
+* **Node.js** (versão 18 ou superior)
+* **npm** ou **yarn**
+
+### Passo a Passo
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone [https://github.com/werbert-webitz/amem.git](https://github.com/werbert-webitz/amem.git)
