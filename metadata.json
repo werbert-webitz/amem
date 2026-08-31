@@ -1,0 +1,6 @@
+{
+  "name": "Amém - Artigos Religiosos",
+  "description": "Landing page e catálogo artesanal para a marca Amém - Fé que se faz à mão. Artigos religiosos, santinhos em amigurumi, terços e decoração sacra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
