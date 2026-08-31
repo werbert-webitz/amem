@@ -361,26 +361,6 @@ export const PRODUCTS: Product[] = [
   isPopular: true,
   isNew: false,
   customizationOptions: []
-},
-   {
-  id: 'herois-em-croche',
-  name: 'Amigurumis temáticos',
-  subtitle: 'Amigurumi confeccionados à mão com fios de algodão de alta qualidade, representando super-heróis populares.',
-  category: 'baby',
-  price: 149.90,
-  image: heroisImg,
-  description: 'Confeccionados em crochê amigurumi. Feitos com fio de algodão de alta qualidade e acabamento impecável, são ideais para decorar o quarto infantil, presentear ou acompanhar as brincadeiras das crianças.',
-  materials: [
-    'Fio 100% Algodão Premium',
-    'Olhos com Trava de Segurança Antiasfixia',
-    'Enchimento de Manta Acrílica Hipoalergênica',
-    'Detalhes Bordados à Mão'
-  ],
-  isPopular: true,
-  isNew: false,
-  customizationOptions: [
-  ]
-},
 
   {
     id: 'leao-em-croche',
