@@ -212,7 +212,7 @@ export const ContactSection: React.FC = () => {
                       </label>
                       <input
                         type="tel"
-                        placeholder="(11) 99999-9999"
+                        placeholder="(99) 99825-60076"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="w-full text-xs p-3 rounded-xl border border-[#E8DCD0] bg-[#FBF8F3] text-[#5C3A21] focus:outline-none focus:ring-2 focus:ring-[#C47B62]"

@@ -26,13 +26,13 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif-sacred font-bold text-[#5C3A21] leading-[1.15]">
-              <span className="block text-xl sm:text-2xl font-sans font-normal text-[#8C5D3B] mb-2 tracking-wide">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif-sacred font-bold text-[#5C3A21] leading-tight">
+              <span className="block text-lg sm:text-3xl font-sans font-normal text-[#8C5D3B] mb-2 tracking-wide">
                 Bem-vindo à Amém
               </span>
               Sinta a paz de ter a{' '}
               <span className="relative inline-block text-[#C47B62]">
-                <span className="font-script text-5xl sm:text-6xl lg:text-7xl lowercase font-normal italic pr-2">
+                <span className="font-script text-4xl sm:text-6xl lg:text-7xl lowercase font-normal italic pr-2">
                   fé que se faz à mão
                 </span>
               </span>

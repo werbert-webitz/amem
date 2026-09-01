@@ -517,9 +517,8 @@ export const BRAND_CONFIG = {
   tagline: 'fé que se faz à mão',
   instagramUrl: 'https://www.instagram.com/amem_artigosreligiosos/',
   instagramHandle: '@amem_artigosreligiosos',
-  whatsappNumber: '5511999999999', // Placeholder standard WhatsApp
-  whatsappFormatted: '+55 (11) 99999-9999',
-  email: 'contato.amem.artigos@gmail.com',
-  city: 'Ateliê em São Paulo - SP',
-  shippingText: 'Enviamos para todo o Brasil com embalagem segura para presente'
-};
+  whatsappNumber: '5599982560076', // Placeholder standard WhatsApp
+  whatsappFormatted: '+55 (99) 99825-60076',
+  email: 'amemartigosreligiosos@gmail.com',
+  city: 'Imperatriz - MA',
+  };

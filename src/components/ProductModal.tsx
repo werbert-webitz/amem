@@ -31,47 +31,50 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 animate-fadeIn">
+    <div 
+      className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-2 sm:p-4 md:p-6 animate-fadeIn"
+      onClick={onClose}
+    >
       <div
-        className="relative bg-[#FFFDF9] rounded-3xl max-w-3xl w-full shadow-warm-lg border border-[#E8DCD0] overflow-hidden my-8"
+        className="relative bg-[#FFFDF9] rounded-3xl max-w-3xl w-full shadow-warm-lg border border-[#E8DCD0] overflow-hidden my-auto max-h-[92vh] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close Button */}
+        {/* Botão Fechar com z-index alto e posição fixa garantida no container */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-[#F4EBE2] text-[#5C3A21] hover:bg-[#C47B62] hover:text-white transition-colors duration-200 cursor-pointer"
+          className="absolute top-3 right-3 z-50 p-2.5 rounded-full bg-[#5C3A21] text-white hover:bg-[#C47B62] shadow-lg transition-colors duration-200 cursor-pointer"
           aria-label="Fechar"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <div className="grid grid-cols-1 md:grid-cols-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 overflow-y-auto">
           {/* Left Column: Product Image */}
-          <div className="md:col-span-6 bg-[#F4EBE2] relative flex items-center justify-center p-6 border-b md:border-b-0 md:border-r border-[#E8DCD0]">
+          <div className="md:col-span-6 bg-[#F4EBE2] relative flex items-center justify-center p-4 sm:p-6 border-b md:border-b-0 md:border-r border-[#E8DCD0]">
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-72 sm:h-80 md:h-full object-cover rounded-2xl shadow-warm-md"
+              className="w-full h-64 sm:h-80 md:h-full object-contain object-top rounded-2xl shadow-warm-md"
               referrerPolicy="no-referrer"
             />
             {product.isPopular && (
-              <span className="absolute top-4 left-4 bg-[#C47B62] text-white text-xs font-bold px-3 py-1 rounded-full shadow-warm-sm">
+              <span className="absolute top-3 left-3 bg-[#C47B62] text-white text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full shadow-warm-sm">
                 ★ Mais Pedido
               </span>
             )}
           </div>
 
           {/* Right Column: Details & Order Customizer */}
-          <div className="md:col-span-6 p-6 sm:p-8 flex flex-col justify-between space-y-6 max-h-[80vh] overflow-y-auto">
+          <div className="md:col-span-6 p-5 sm:p-8 flex flex-col justify-between space-y-5">
             <div>
-              <div className="flex items-center gap-2 mb-1">
+              <div className="flex items-center gap-2 mb-1 pr-8">
                 <span className="text-[11px] font-bold text-[#C47B62] uppercase tracking-wider bg-[#F4EBE2] px-2.5 py-0.5 rounded-md">
                   {product.category === 'amigurumi' ? 'Santinho Amigurumi' : product.category === 'tercos' ? 'Terço Artesanal' : ''}
                 </span>
                 <span className="text-xs text-[#8C5D3B]">{product.dimensions}</span>
               </div>
 
-              <h3 className="text-2xl font-serif-sacred font-bold text-[#5C3A21] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-serif-sacred font-bold text-[#5C3A21] leading-tight pr-6">
                 {product.name}
               </h3>
               <p className="text-xs text-[#6B5546] mt-1">{product.subtitle}</p>
@@ -104,14 +107,13 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
               </div>
 
               {/* Customization Controls */}
-              <div className="mt-5 space-y-3 border-t border-[#E8DCD0] pt-4">
-                <p className="text-xs font-bold text-[#5C3A21] flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-[#C5A059]" />
-                  Personalize sua peça:
-                </p>
+              {product.customizationOptions && product.customizationOptions.length > 0 && (
+                <div className="mt-5 space-y-3 border-t border-[#E8DCD0] pt-4">
+                  <p className="text-xs font-bold text-[#5C3A21] flex items-center gap-1.5">
+                    <Sparkles className="w-4 h-4 text-[#C5A059]" />
+                    Personalize sua peça:
+                  </p>
 
-                {/* Custom Options Radio buttons */}
-                {product.customizationOptions && product.customizationOptions.length > 0 && (
                   <div>
                     <label className="block text-[11px] font-medium text-[#6B5546] mb-1">
                       Estilo do Acabamento:
@@ -138,8 +140,8 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
                       ))}
                     </div>
                   </div>
-                )}
-              </div>
+                </div>
+              )}
             </div>
 
             {/* Direct WhatsApp Order Action */}

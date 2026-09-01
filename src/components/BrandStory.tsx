@@ -1,6 +1,6 @@
 import React from 'react';
 import { ASSETS } from '../data/products';
-import { HeartHandshake, Sparkles, Ribbon, Feather, Sun } from 'lucide-react';
+import { HeartHandshake, Sparkles, Ribbon, Feather } from 'lucide-react';
 
 export const BrandStory: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ export const BrandStory: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-sacred font-bold text-[#5C3A21]">
             Onde a fé ganha forma em fios e amor
           </h2>
-          <p className="text-[#6B5546] font-script text-2xl sm:text-3xl italic text-[#C47B62]">
+          <p className="font-script text-2xl sm:text-3xl italic text-[#C47B62]">
             "Cada ponto é uma prece, cada peça é uma bênção."
           </p>
         </div>
@@ -29,29 +29,26 @@ export const BrandStory: React.FC = () => {
               {/* Outer decorative ring */}
               <div className="absolute -inset-4 rounded-3xl bg-[#F4EBE2] border border-[#E8DCD0] -rotate-2 -z-10" />
               
-              <div className="relative rounded-2xl overflow-hidden shadow-warm-lg border-4 border-[#FFFDF9]">
+              {/* Container da Imagem */}
+              <div className="relative rounded-2xl overflow-hidden shadow-warm-lg border-4 border-[#FFFDF9] bg-[#5C3A21]">
                 <img
                   src={ASSETS.artisan}
                   alt="Artesã tecendo santinho em crochê - Amém"
                   className="w-full h-[400px] object-cover"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#5C3A21]/70 via-transparent to-transparent flex items-end p-6">
-                  <div className="text-[#FFFDF9]">
-                    <p className="font-serif-sacred text-xl font-bold">Artesanato Sacro Feito com Devoção</p>
-                    <p className="text-xs text-stone-200">Dedicação manual em cada encomenda</p>
+                
+                {/* Overlay gradiente com texto sobre a foto */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#5C3A21]/90 via-transparent to-transparent flex items-end p-6">
+                  <div className="text-[#FFFDF9] w-full">
+                    <p className="font-serif-sacred text-lg sm:text-xl font-bold leading-tight">
+                      Artesanato Sacro Feito com Devoção
+                    </p>
+                    <p className="text-xs text-stone-200 mt-1">
+                      Dedicação manual em cada encomenda
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              {/* Floating Quote Badge */}
-              <div className="absolute -bottom-6 -right-4 bg-[#5C3A21] text-[#FFFDF9] p-4 rounded-2xl shadow-warm-md max-w-[200px] text-xs border border-[#C5A059]">
-                <p className="font-serif-sacred text-sm font-semibold italic text-[#C5A059] mb-1">
-                  Amém Artigos Religiosos
-                </p>
-                <p className="text-[11px] leading-tight text-stone-300">
-                  Transmitindo fé, proteção e carinho para lares em todo o Brasil.
-                </p>
               </div>
             </div>
           </div>
